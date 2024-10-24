@@ -1,0 +1,69 @@
+@import "./variable";
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: $header-bg;
+    height: 12vh;
+    justify-content: space-between;
+    align-items: center;
+    .img-flung{
+        display: flex;
+        gap: 10px;
+        .cambodia{
+            img{
+                margin-left: 20px;
+                width: 10vh;
+                height: 30px;
+                margin-top: 5px;
+            }
+        }
+        .The-UK{
+            img{
+                margin-right: 20px;
+                width: 10vh;
+                height: 30px;
+                margin-top: 5px;
+                
+            }
+        }
+        
+    }
+    .imgs{
+        img{
+            display: flex;
+            width: 30vh;
+            justify-content: space-between;
+            margin-left: 10vh;
+            border-radius: 5px;
+            object-fit: cover;
+            height: 10vh;
+        }
+    }
+    .link{
+        ul{
+            display: flex;
+            margin-left: 90vh;
+            gap: 20px;
+
+            li{
+
+                list-style: none;
+                font-size: 25px;
+
+                a{                
+                    text-decoration: none;
+                    // padding: 20px;
+                }
+                
+            }
+            
+        }
+    }
+    .langues{
+        select{
+            font-size: 25px;
+        }
+    }
+
+}

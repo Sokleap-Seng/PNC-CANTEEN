@@ -1,0 +1,78 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #ff9933;
+  height: 12vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .img-flung {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+header .img-flung .cambodia img {
+  margin-left: 20px;
+  width: 10vh;
+  height: 30px;
+  margin-top: 5px;
+}
+header .img-flung .The-UK img {
+  margin-right: 20px;
+  width: 10vh;
+  height: 30px;
+  margin-top: 5px;
+}
+header .imgs img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 10vh;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 10vh;
+}
+header .link ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 90vh;
+  gap: 20px;
+}
+header .link ul li {
+  list-style: none;
+  font-size: 25px;
+}
+header .link ul li a {
+  text-decoration: none;
+}
+header .langues select {
+  font-size: 25px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
