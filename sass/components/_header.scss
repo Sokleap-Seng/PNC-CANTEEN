@@ -84,10 +84,10 @@ header{
     }
     p{
         background-color: $header-bg;
-        width: 90vh;
+        width: 110vh;
         @include text-center;
         font-size: 20px;
-        margin-top: 40px;
+        margin-top: 60px;
         border-radius: 9px;
         padding: 10px;
     }
@@ -105,18 +105,14 @@ header{
         background-color: $seeall-bg;
         height: 40px;
         width: 150px;
+        margin-top: 100px;
+        border-radius: 10px; 
         button{
+            font-size: 20px;
+            background-color:$seeall-bg;
             border: none;
-            background-color: $seeall-bg;
-            @include white;
-            // @include text-center;
-            p{
-                @include text-center;
-                border-radius: 20px;
-                margin-top: 10px;
-                color: white;
-                font-size: 20px;
-            }
+            color: white;
+            margin-top: 10px;
         }
     }
 }
@@ -125,3 +121,4 @@ header{
         color: $text-food-bg;
     }
 }
+// Card1

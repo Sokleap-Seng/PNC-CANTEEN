@@ -1,50 +1,85 @@
 @import "group-mixin";
 .card-container {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     justify-content: space-between;
     width: 95%;
     margin: 50px auto;
-
+    margin-left: 8vh;
+    height: 67vh;
     .card {
         cursor: pointer;
         border-radius: 15px;
         box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px 0;
         display: flex;
         flex-direction: column;
-
         .card-image1, .card-images {
             img {
                 display: block;
-                width: 60%;
+                width: 65%;
                 height: 200px; 
                 object-fit: cover; 
                 border-radius: 10px;
+                margin-left: 20%;
+                
             }
         }
     }
-
     .card-image1 {
         border-radius: 20px;
         position: relative;
         padding: 0; 
         background-image: linear-gradient(to bottom, #129a8e, #38ed7c);
+        .ratana{
+            img{
+                width: 24vh;
+                margin-left: 25%;
+            }
+        }
+        .yon{
+            img{
+                width: 20vh;
+                height: 21vh;
+            }
+        }
+        .nana{
+            img{
+                width: 35vh;
+                margin-left: 25%;
+                margin-top: 10px;
+            }
+
+            
+        }
     }
 
     .card-images {
         border-radius: 20px;
-        height: 200px; 
+        height: 210px; 
         background-image: linear-gradient(to bottom, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
     }
     .card-content {
         padding: 20px;
         background-color: #f9f9f9;
+// play drink
+        .price{
+            display: flex;
+            gap: 30px;
+            width: 95%;
+            margin: 50px auto;
+            margin-left: 8vh;
+            .order{
+                button{
 
+                }
+            }
+        }
         h3 {
             @include text-center;
             font-size: 25px;
+            margin-top: 30px;
             background-image: linear-gradient(to right, #129a8e, #38ed7c);
-            // -webkit-background-clip: text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -66,9 +101,48 @@
             margin-right: auto;
             font-size: 15px;
             margin-top: 20px;
+            
+        }
+        :hover{
+            
+            color: #F8B500;
         }
     }
 }
+// card1 seemore
+.seemor{
+    height: 8vh;
+   display: flex;
+   margin-left: 183vh;
+
+
+   .btns{
+    button{
+        font-size: 20px;
+        height: 7vh;
+        background-color: $seeall-bg;
+        width: 200%;
+        justify-content: flex-start;
+        display: flex;
+        border: none;
+        color: $white-bg;
+        border-radius: 10px;
+        p{
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+    }
+   }
+   .im{
+    img{
+        background-color: $white-bg;
+        margin-top: 20%;
+        margin-left: 90%;
+        border-radius: 100%;
+    }
+   }
+}
+// <!-- card name Drink -->
 
 
 
