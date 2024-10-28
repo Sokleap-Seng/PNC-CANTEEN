@@ -68,11 +68,11 @@
             width: 95%;
             margin: 50px auto;
             margin-left: 8vh;
-            .order{
-                button{
+            // .order{
+            //     button{
 
-                }
-            }
+            //     }
+            // }
         }
         h3 {
             @include text-center;
@@ -143,6 +143,44 @@
    }
 }
 // <!-- card name Drink -->
-
-
-
+.card-food{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    text-align: center;
+    .card-food-card{
+        display: flex;
+        gap: 10px;
+        .card-top{
+            @include text-center;
+            display: flex;
+            background: $gray-bg;
+            img{
+                width: 210px;
+                height: 200px;
+            }
+            .card-left{
+                h1{
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .card-right{
+            @include text-center;
+            display: flex;
+            background: $header-bg;
+            img{
+                width: 210px;
+                height: 200px;
+            }
+            .card-left{
+                h1{
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    
+}

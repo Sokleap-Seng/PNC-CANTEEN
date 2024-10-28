@@ -13,3 +13,8 @@
 @mixin white{
     color: white;
 }
+@mixin text-bold{
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: bold;
+}

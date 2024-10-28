@@ -1,0 +1,21 @@
+@import "../components/variable";
+@import "../components/group-mixin";
+
+.btn{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    button{
+        @include text-bold;
+        background: $header-bg;
+        height: 10vh;
+        width: 15%;
+        border-radius: 15px;
+        border: none;
+        
+    }
+    .btn-pop{
+        width: 25%;
+    }
+}
