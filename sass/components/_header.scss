@@ -1,0 +1,126 @@
+@import "variable";
+@import "group-mixin";
+
+
+header{
+    
+    display: flex;
+    flex-direction: row;
+    background-color: $header-bg;
+    height: 12vh;
+    justify-content: space-between;
+    align-items: center;
+    .img-flung{
+        display: flex;
+        gap: 10px;
+        .cambodia{
+            img{
+                margin-left: 20px;
+                width: 10vh;
+                height: 30px;
+                margin-top: 5px;
+            }
+        }
+        .The-UK{
+            img{
+                margin-right: 20px;
+                width: 10vh;
+                height: 30px;
+                margin-top: 5px;
+                
+            }
+        }
+        
+    }
+    .imgs{
+        img{
+            display: flex;
+            width: 30vh;
+            justify-content: space-between;
+            margin-left: 10vh;
+            border-radius: 5px;
+            object-fit: cover;
+            height: 10vh;
+        }
+    }
+    .link{
+        ul{
+            display: flex;
+            margin-left: 90vh;
+            gap: 20px;
+
+            li{
+
+                list-style: none;
+                font-size: 25px;
+
+                a{                
+                    text-decoration: none;
+                    // padding: 20px;
+                }
+                
+            }
+            
+        }
+    }
+    .langues{
+        select{
+            font-size: 25px;
+        }
+    }
+
+}
+// #backgroud
+.backgorud{
+    @include text-center;
+    flex-direction: column;
+    img{
+        object-fit: cover;
+        height: 150vh;
+        width: 224.8vh;
+    }
+    h1{
+       font-size: 40px;
+        margin-top: 40px;
+    }
+    p{
+        background-color: $header-bg;
+        width: 110vh;
+        @include text-center;
+        font-size: 20px;
+        margin-top: 60px;
+        border-radius: 9px;
+        padding: 10px;
+    }
+}
+// menu
+.menus{
+    height: 15vh;
+    @include space-between;
+    margin-top: 50px;
+    .menu{
+        font-size: 30px;
+    }
+    .bu{
+        margin-right: 20vh;
+        background-color: $seeall-bg;
+        height: 40px;
+        width: 150px;
+        margin-top: 100px;
+        border-radius: 10px; 
+        button{
+            font-size: 20px;
+            background-color:$seeall-bg;
+            border: none;
+            color: white;
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+    }
+}
+.cate{
+    h2{
+        color: $text-food-bg;
+    }
+}
+// Card1
