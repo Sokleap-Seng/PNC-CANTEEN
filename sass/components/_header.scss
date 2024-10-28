@@ -1,9 +1,8 @@
-@import "variable";
 @import "group-mixin";
-
-
+@import "../components/variable";
 header{
-    
+    position: sticky;
+    top: 0;   
     display: flex;
     flex-direction: row;
     background-color: $header-bg;
@@ -12,10 +11,10 @@ header{
     align-items: center;
     .img-flung{
         display: flex;
-        gap: 10px;
+        gap: 5px;
         .cambodia{
             img{
-                margin-left: 20px;
+                margin-left: 10px;
                 width: 10vh;
                 height: 30px;
                 margin-top: 5px;
@@ -23,7 +22,7 @@ header{
         }
         .The-UK{
             img{
-                margin-right: 20px;
+                margin-right: 10px;
                 width: 10vh;
                 height: 30px;
                 margin-top: 5px;
@@ -35,7 +34,7 @@ header{
     .imgs{
         img{
             display: flex;
-            width: 30vh;
+            width: 25vh;
             justify-content: space-between;
             margin-left: 10vh;
             border-radius: 5px;
@@ -47,7 +46,7 @@ header{
         ul{
             display: flex;
             margin-left: 90vh;
-            gap: 20px;
+            gap: 15px;
 
             li{
 
@@ -73,6 +72,9 @@ header{
 // #backgroud
 .backgorud{
     @include text-center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     flex-direction: column;
     img{
         object-fit: cover;
@@ -123,4 +125,3 @@ header{
         color: $text-food-bg;
     }
 }
-// Card1
