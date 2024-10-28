@@ -3,6 +3,7 @@
 
 
 header{
+    
     display: flex;
     flex-direction: row;
     background-color: $header-bg;
@@ -113,6 +114,7 @@ header{
             border: none;
             color: white;
             margin-top: 10px;
+            margin-left: 40px;
         }
     }
 }
