@@ -83,7 +83,7 @@ header{
     img{
         object-fit: cover;
         height: 150vh;
-        width: 224.8vh;
+        width: 100%;
     }
     h1{
        font-size: 40px;
@@ -177,6 +177,7 @@ header{
     }
     img{
         height: 50vh;
+        object-fit: cover;
     }
 }
 #about-p{
