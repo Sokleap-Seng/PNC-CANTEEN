@@ -147,7 +147,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     gap: 10px;
     text-align: center;
     .card-food-card{
@@ -157,8 +157,9 @@
             @include text-center;
             display: flex;
             background: $gray-bg;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
             img{
-                width: 210px;
+                width: 200px;
                 height: 200px;
             }
             .card-left{
@@ -171,8 +172,24 @@
             @include text-center;
             display: flex;
             background: $header-bg;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
             img{
-                width: 210px;
+                width: 200px;
+                height: 200px;
+            }
+            .card-left{
+                h1{
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .card-last{
+            @include text-center;
+            display: flex;
+            background: $header-bg;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            img{
+                width: 200px;
                 height: 200px;
             }
             .card-left{

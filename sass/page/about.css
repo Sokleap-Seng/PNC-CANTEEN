@@ -140,6 +140,8 @@ header .langues select {
 }
 .about-container img {
   height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #about-p {
@@ -183,7 +185,7 @@ table tbody tr:hover {
 .btn {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 40px;
   padding-bottom: 10px;
 }
 .btn button {
@@ -325,7 +327,7 @@ table tbody tr:hover {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 10px;
+  padding: 5px;
   gap: 10px;
   text-align: center;
 }
@@ -339,9 +341,10 @@ table tbody tr:hover {
   justify-content: center;
   display: flex;
   background: #BFBFBF;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .card-food .card-food-card .card-top img {
-  width: 210px;
+  width: 200px;
   height: 200px;
 }
 .card-food .card-food-card .card-top .card-left h1 {
@@ -353,12 +356,28 @@ table tbody tr:hover {
   justify-content: center;
   display: flex;
   background: #FF9933;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .card-food .card-food-card .card-right img {
-  width: 210px;
+  width: 200px;
   height: 200px;
 }
 .card-food .card-food-card .card-right .card-left h1 {
+  text-transform: uppercase;
+}
+.card-food .card-food-card .card-last {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: #FF9933;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.card-food .card-food-card .card-last img {
+  width: 200px;
+  height: 200px;
+}
+.card-food .card-food-card .card-last .card-left h1 {
   text-transform: uppercase;
 }
 
@@ -367,20 +386,21 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: #BFBFBF;
-  height: 60vh;
-  margin-top: 3%;
+  height: 50vh;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 footer .right {
   width: 40%;
 }
 footer .right img {
   width: 50%;
-  margin-bottom: 10%;
+  margin-bottom: 10px;
   margin-left: 30px;
 }
 footer .right h2 {
   margin-left: 30px;
-  margin-bottom: 10%;
+  margin-bottom: 10px;
 }
 footer .right p {
   margin-bottom: 10px;
@@ -392,18 +412,14 @@ footer .center {
   flex-direction: column;
 }
 footer .center h2 {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 footer .center .facebook, footer .center .tik-tok, footer .center .you-tube {
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: start;
-  margin: 30px;
-}
-footer .center .facebook img, footer .center .tik-tok img, footer .center .you-tube img {
-  width: 50px;
-  height: 40px;
+  margin: 10px;
 }
 footer .center .facebook .teen, footer .center .tik-tok .teen, footer .center .you-tube .teen {
   margin-left: 10px;
@@ -414,27 +430,271 @@ footer .left {
   flex-direction: column;
 }
 footer .left h2 {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 footer .left .phone, footer .left .map, footer .left .Email {
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: start;
-  margin: 30px;
-}
-footer .left .phone img, footer .left .map img, footer .left .Email img {
-  width: 40px;
-  height: 40px;
+  margin: 10px;
 }
 footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
   margin-left: 10px;
 }
-
-.linkes {
+footer .linkes {
   color: blue;
   background-color: #BFBFBF;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 20px;
+  width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    background-color: #FF9933;
+    height: 13vh;
+    align-items: center;
+  }
+  header .img-flung {
+    display: flex;
+    gap: 10px;
+    width: 15%;
+    margin-top: 5px;
+  }
+  header .img-flung .cambodia {
+    margin-right: 20px;
+  }
+  header .img-flung .cambodia img {
+    width: 25px;
+    height: 25px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header .img-flung .The-UK {
+    margin-right: 200px;
+  }
+  header .img-flung .The-UK img {
+    margin-right: 10px;
+    width: 20px;
+    height: 23px;
+    margin-top: 5px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header .imgs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 25%;
+  }
+  header .imgs img {
+    margin-right: 20px;
+    width: 200px;
+    height: 50px;
+  }
+  header .link {
+    width: 50%;
+  }
+  header .link ul {
+    display: flex;
+    margin-left: 50px;
+    gap: 10px;
+  }
+  header .link ul li {
+    list-style: none;
+    font-size: 28px;
+    gap: 10px;
+  }
+  header .link ul li a {
+    text-decoration: none;
+  }
+  header .langues {
+    width: 10%;
+    margin-right: 70px;
+    size: 100px;
+  }
+  header .langues select {
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-container {
+    height: 30vh;
+  }
+  .about-container h3 {
+    font-size: 20px;
+  }
+  .about-container h1 {
+    font-size: 25px;
+  }
+  .about-container img {
+    width: 200px;
+    height: 25vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .btn {
+    display: flex;
+    justify-content: start;
+  }
+  .btn button {
+    font-size: medium;
+    height: 6vh;
+    width: 15%;
+    border-radius: 5px;
+  }
+  .btn .btn-pop {
+    font-size: small;
+    width: 25%;
+  }
+  .card-food .card-food-card h1 {
+    font-size: medium;
+  }
+  .card-food .card-food-card p {
+    font-size: small;
+  }
+  .card-food .card-food-card .card-last {
+    display: none;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #BFBFBF;
+    height: 45vh;
+    flex-wrap: wrap;
+  }
+  footer .center p {
+    font-size: small;
+  }
+  footer .left p {
+    font-size: small;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  header {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    background-color: #FF9933;
+    height: 30vh;
+  }
+  header .img-flung {
+    display: none;
+  }
+  header .imgs {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 10px;
+    justify-content: end;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header .imgs img {
+    width: 140%;
+    height: 60px;
+  }
+  header .link {
+    width: 50%;
+  }
+  header .link ul {
+    display: flex;
+    margin-left: 45px;
+    gap: 30px;
+  }
+  header .link ul li {
+    list-style: none;
+    font-size: 30px;
+  }
+  header .link ul li:hover {
+    background-color: rgb(36, 146, 189);
+  }
+  header .link ul li a {
+    text-decoration: none;
+  }
+  header .langues {
+    display: none;
+  }
+  .about-container {
+    height: 40vh;
+  }
+  .about-container h3 {
+    font-size: 15px;
+  }
+  .about-container h1 {
+    font-size: 20px;
+  }
+  .about-container img {
+    width: 200px;
+    height: 30vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #about-p {
+    font-size: small;
+  }
+  .btn {
+    display: flex;
+  }
+  .btn button {
+    font-size: medium;
+    height: 7vh;
+    width: 25%;
+    border-radius: 7px;
+  }
+  .btn .btn-pop {
+    font-size: small;
+    width: 40%;
+  }
+  .table-date {
+    width: 100%;
+  }
+  .table-date table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 8px;
+  }
+  .table-date table thead, .table-date table tbody {
+    width: 100%;
+  }
+  .table-date table thead tr, .table-date table tbody tr {
+    width: 100%;
+  }
+  .table-date table thead tr th, .table-date table tbody tr th {
+    width: 100%;
+    font-size: 10px;
+  }
+  .table-date table tbody tr td:nth-child(1) {
+    font-size: 10px;
+  }
+  .table-date table tbody tr td:nth-child(1) td {
+    font-size: 15px;
+    width: 100%;
+  }
+  .card-food {
+    width: 100%;
+  }
+  .card-food .card-food-card {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .center {
+    margin-top: 50px;
+  }
+  footer .left {
+    display: none;
+  }
+  footer .linkes {
+    margin-left: 20px;
+    width: 100%;
+  }
 }/*# sourceMappingURL=about.css.map */

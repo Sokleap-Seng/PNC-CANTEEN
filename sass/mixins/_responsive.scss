@@ -1,11 +1,11 @@
 @import "../components/variable";
 @import "../components/group-mixin";
-@media (min-width:800px) and (max-width:1280px){
+@media (min-width:768px) and (max-width:1024px){
     header{        
         display: flex;
         flex-direction: row;
         background-color: $header-bg;
-        height: 8vh;
+        height: 13vh;
         // justify-content: space-between;
         align-items: center;
         .img-flung{
@@ -74,4 +74,197 @@
         }
     
     }
+}
+@media (min-width:768px) and (max-width:1024px){
+    .about-container{
+        height: 30vh;
+        h3{
+            font-size: 20px;
+        }
+        h1{
+            font-size: 25px;
+        }
+        img{
+            width: 200px;
+            height: 25vh;
+            object-fit: cover;
+        }
+    }
+    .btn{
+    display: flex;
+    justify-content: start;
+    button{
+        font-size: medium;
+        height: 6vh;
+        width: 15%;
+        border-radius: 5px;
+    }
+    .btn-pop{
+        font-size: small;
+        width: 25%;
+    }
+   }
+   .card-food{
+    .card-food-card{
+        h1{
+            font-size: medium;
+        }
+        p{
+            font-size: small;
+        }
+        .card-last{
+            display: none;
+       }
+    }
+   }
+   footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $gray-bg;
+    height: 45vh;
+    flex-wrap: wrap;
+    .center{
+        p{
+            font-size: small;
+        }
+    }
+    .left{
+        p{
+            font-size: small;
+        }
+    }
+   }
+}
+@media (min-width:320px) and (max-width:767px){
+    header{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        background-color: $header-bg;
+        height: 30vh;
+        .img-flung{
+            display: none;  
+        }
+        .imgs{  
+            flex-wrap: wrap;    
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            margin-left: 50px;
+            margin-top: 10px;
+            justify-content: end;   
+            object-fit: cover;
+            
+            img{
+                width: 140%;
+                height: 60px;
+            }
+        }
+        .link{
+            width: 50%;     
+            ul{   
+                display: flex;
+                margin-left: 45px;
+                gap: 30px;
+                li{
+                    &:hover{
+                        background-color: rgb(36, 146, 189);
+                    }
+                    list-style: none;
+                    font-size: 30px;
+                    a{                
+                        text-decoration: none;
+                    }
+                    
+                }
+                
+            }
+        }
+        .langues{
+            display: none;
+        }
+    }
+    .about-container{
+        height: 40vh;
+        h3{
+            font-size: 15px;
+        }
+        h1{
+            font-size: 20px;
+        }
+        img{
+            width: 200px;
+            height: 30vh;
+            object-fit: cover;
+        }
+    }
+    #about-p{
+        font-size: small;
+    }
+    .btn{
+        display: flex;
+        button{
+            font-size: medium;
+            height: 7vh;
+            width: 25%;
+            border-radius: 7px;
+        }
+        .btn-pop{
+            font-size: small;
+            width: 40%;
+        }
+    }
+    .table-date{
+        width: 100%;
+        table{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            font-size: 8px;
+            thead, tbody{
+                width: 100%;
+                tr{
+                    width: 100%;
+                    th{
+                        width: 100%;
+                        font-size: 10px;
+                    }
+                }
+            }
+            tbody{
+                
+                tr{
+                    td:nth-child(1){
+                        font-size: 10px; 
+                        td{
+                            font-size: 15px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .card-food{
+        width: 100%;
+        .card-food-card{
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+    footer{
+    .center{
+        margin-top: 50px;
+    }
+    .left{
+        display: none;
+    }
+    .linkes{
+        margin-left: 20px;
+        width: 100%;
+    }
+   }
 }
