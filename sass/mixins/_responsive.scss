@@ -128,10 +128,38 @@
         }
     }
     .cate{
-        h2{
-            color: $text-food-bg;
+        @keyframes cate{
+            from{
+                transform: translateX(-300px);
+            }
+            to{
+                transform: translateX(0px);
+            }
         }
-    }  
+        @keyframes rotate {
+            from {
+                transform: rotate(0);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        
+        h2{
+            width: 130px;
+            background: orange;
+            animation-name: rotate;
+            animation-duration: 60s;
+            animation-delay: 0s;
+            
+            
+        }
+        h2:hover{
+            letter-spacing: 5px;
+            color: orange;
+    
+        }
+    }
 //  card1
     .card-container {
         display: flex;
@@ -442,11 +470,38 @@
         }
     }
     .cate{
+        @keyframes cate{
+            from{
+                transform: translateX(-300px);
+            }
+            to{
+                transform: translateX(0px);
+            }
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        
         h2{
-            color: $text-food-bg;
+            width: 130px;
+            background: orange;
+            animation-name: rotate;
+            animation-duration: 60s;
+            animation-delay: 0s;
+            
             
         }
-    } 
+        h2:hover{
+            letter-spacing: 5px;
+            color: orange;
+    
+        }
+    }
     .card-container {
         display: flex;
         justify-content: space-between;

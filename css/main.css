@@ -149,8 +149,60 @@ header .langues select {
   margin-left: 40px;
 }
 
+@-webkit-keyframes cate {
+  from {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes cate {
+  from {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 .cate h2 {
-  color: #68A942;
+  width: 130px;
+  background: orange;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.cate h2:hover {
+  letter-spacing: 5px;
+  color: orange;
 }
 
 .card-container {
@@ -588,8 +640,59 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
     margin-top: 7px;
     margin-left: 40px;
   }
+  @-webkit-keyframes cate {
+    from {
+      -webkit-transform: translateX(-300px);
+              transform: translateX(-300px);
+    }
+    to {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes cate {
+    from {
+      -webkit-transform: translateX(-300px);
+              transform: translateX(-300px);
+    }
+    to {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @-webkit-keyframes rotate {
+    from {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate {
+    from {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
   .cate h2 {
-    color: #68A942;
+    width: 130px;
+    background: orange;
+    -webkit-animation-name: rotate;
+            animation-name: rotate;
+    -webkit-animation-duration: 60s;
+            animation-duration: 60s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  .cate h2:hover {
+    letter-spacing: 5px;
+    color: orange;
   }
   .card-container {
     display: -webkit-box;
@@ -994,8 +1097,59 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
     border: none;
     color: white;
   }
+  @-webkit-keyframes cate {
+    from {
+      -webkit-transform: translateX(-300px);
+              transform: translateX(-300px);
+    }
+    to {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes cate {
+    from {
+      -webkit-transform: translateX(-300px);
+              transform: translateX(-300px);
+    }
+    to {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @-webkit-keyframes rotate {
+    from {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate {
+    from {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
   .cate h2 {
-    color: #68A942;
+    width: 130px;
+    background: orange;
+    -webkit-animation-name: rotate;
+            animation-name: rotate;
+    -webkit-animation-duration: 60s;
+            animation-duration: 60s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  .cate h2:hover {
+    letter-spacing: 5px;
+    color: orange;
   }
   .card-container {
     display: -webkit-box;
