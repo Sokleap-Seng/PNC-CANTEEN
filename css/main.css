@@ -418,7 +418,7 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
           justify-content: center;
 }
 
-@media (min-width: 800px) and (max-width: 1280px) {
+@media (min-width: 800px) and (max-width: 1024px) {
   body {
     width: 100%;
   }
@@ -593,12 +593,11 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 50px auto;
+    margin: 50px;
     height: 40vh;
   }
   .card-container .card {
     width: 23%;
-    cursor: pointer;
     border-radius: 15px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px 0;
             box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px 0;
@@ -616,7 +615,7 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
   }
   .card-container .card .card-images img {
     display: block;
@@ -628,7 +627,7 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
   }
   .card-container .card-image1 {
     border-radius: 20px;
-    height: 90%;
+    height: 100%;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#129a8e), to(#38ed7c));
     background-image: linear-gradient(to bottom, #129a8e, #38ed7c);
   }
@@ -640,7 +639,7 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
     margin-left: 2%;
   }
   .card-container .card-image1 .yon img {
-    width: 90%;
+    width: 110%;
     height: 100%;
   }
   .card-container .card-image1 .nana img {
@@ -665,7 +664,7 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
     margin: 50px auto;
   }
   .card-container .card-content .price .order button {
-    width: 137%;
+    width: 139%;
     gap: 10px;
   }
   .card-container .card-content h3 {
@@ -705,9 +704,6 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 15px;
     margin-top: 20px;
   }
@@ -865,7 +861,7 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
           justify-content: center;
 }
 
-@media (min-width: 412px) and (max-width: 799px) {
+@media (min-width: 390px) and (max-width: 800px) {
   header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -877,9 +873,6 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
         -ms-flex-direction: row;
             flex-direction: row;
     background-color: #FF9933;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     height: 15vh;
   }
   header .img-flung {
@@ -894,7 +887,7 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 30px;
+    margin-left: 20px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
@@ -912,7 +905,7 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 70px;
+    margin-left: 50px;
     gap: 10px;
   }
   header .link ul li {
@@ -970,7 +963,6 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
     display: flex;
   }
   .menus {
-    height: 15vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -980,18 +972,12 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 50px;
-  }
-  .menus .menu {
-    font-size: 30px;
-    margin-bottom: 25%;
+    margin-top: 10px;
   }
   .menus .bu {
+    margin-bottom: 28%;
     margin-right: 10%;
     background-color: #098600;
-    height: 40px;
-    width: 150px;
-    margin-top: 26%;
     border-radius: 10px;
   }
   .menus .bu button {
@@ -999,11 +985,240 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
     background-color: #098600;
     border: none;
     color: white;
-    margin-top: 7px;
-    margin-left: 40px;
   }
   .cate h2 {
     color: #68A942;
+  }
+  .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 10%;
+    margin: 20px;
+    height: 1px;
+  }
+  .card-container .card {
+    margin-top: 10px;
+    width: 80px;
+    height: 40vh;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px 0;
+            box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-container .card .card-image1 img, .card-container .card .card-images img {
+    margin-top: 20px;
+    width: 60px;
+    height: 65px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .card-container .card-image1 {
+    height: 34%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#129a8e), to(#38ed7c));
+    background-image: linear-gradient(to bottom, #129a8e, #38ed7c);
+  }
+  .card-container .card-images {
+    height: 100px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FCEABB), color-stop(50%, #FCCD4D), color-stop(51%, #F8B500), to(#FBDF93));
+    background-image: linear-gradient(to bottom, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+  }
+  .card-container .card-content {
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+  .card-container .card-content h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 10px;
+    margin-top: 1px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#129a8e), to(#38ed7c));
+    background-image: linear-gradient(to right, #129a8e, #38ed7c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .card-container .card-content p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 8px;
+  }
+  .card-container .card-content button {
+    display: none;
+  }
+  .card-container .card-content :hover {
+    color: #F8B500;
+  }
+  .seemor {
+    height: 8vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 60%;
+    margin-top: 75%;
+  }
+  .seemor .btns button {
+    font-size: 14px;
+    height: 4vh;
+    background-color: #098600;
+    width: 200%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: none;
+    color: white;
+    margin-top: 60%;
+    border-radius: 10px;
+  }
+  .seemor .btns button p {
+    margin-left: 10%;
+  }
+  .seemor .im img {
+    width: 70%;
+    background-color: white;
+    margin-top: 120%;
+    margin-left: 60%;
+    border-radius: 100%;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #BFBFBF;
+    height: 50vh;
+    margin-top: 3%;
+  }
+  footer .right {
+    width: 35%;
+  }
+  footer .right img {
+    width: 70%;
+    margin-bottom: 10%;
+    margin-left: 11px;
+  }
+  footer .right h2 {
+    font-size: 18px;
+    margin-left: 15px;
+    margin-bottom: 10%;
+  }
+  footer .right p {
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+  footer .center {
+    margin-top: 80px;
+    width: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .center h2 {
+    font-size: 20px;
+  }
+  footer .center .facebook, footer .center .tik-tok, footer .center .you-tube {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 30px;
+  }
+  footer .center .facebook img, footer .center .tik-tok img, footer .center .you-tube img {
+    width: 50px;
+    height: 40px;
+  }
+  footer .center .facebook .teen, footer .center .tik-tok .teen, footer .center .you-tube .teen {
+    margin-left: 10px;
+  }
+  footer .left {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .left h2 {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  footer .left .phone, footer .left .map, footer .left .Email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 4px;
+  }
+  footer .left .phone img, footer .left .map img, footer .left .Email img {
+    width: 40px;
+    height: 40px;
+  }
+  footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
+    margin-left: 10px;
+  }
+  .linkes {
+    color: blue;
+    background-color: #BFBFBF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 * {
