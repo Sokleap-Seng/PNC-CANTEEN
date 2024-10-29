@@ -60,6 +60,9 @@ header .link ul li {
   list-style: none;
   font-size: 25px;
 }
+header .link ul li:hover {
+  background-color: rgb(36, 146, 189);
+}
 header .link ul li a {
   text-decoration: none;
 }
@@ -418,7 +421,7 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
           justify-content: center;
 }
 
-@media (min-width: 800px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   body {
     width: 100%;
   }
@@ -496,6 +499,9 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
     font-size: 30px;
     gap: 10px;
   }
+  header .link ul li:hover {
+    background-color: rgb(36, 146, 189);
+  }
   header .link ul li a {
     text-decoration: none;
   }
@@ -525,7 +531,7 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
   .backgorud img {
     -o-object-fit: cover;
        object-fit: cover;
-    height: 100vh;
+    height: 99vh;
     width: 100%;
   }
   .backgorud h1 {
@@ -593,7 +599,7 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 50px;
+    margin: 20px;
     height: 40vh;
   }
   .card-container .card {
@@ -720,7 +726,7 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
   .seemor .btns button {
     font-size: 20px;
     height: 4vh;
-    margin-top: 90%;
+    margin-top: 100%;
     margin-right: 9000%;
     background-color: #098600;
     width: 140%;
@@ -861,7 +867,7 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
           justify-content: center;
 }
 
-@media (min-width: 390px) and (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 767px) {
   header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -887,7 +893,7 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 20px;
+    margin-left: 90px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
@@ -905,13 +911,15 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 50px;
-    gap: 10px;
+    margin-left: 100px;
+    gap: 60px;
   }
   header .link ul li {
     list-style: none;
     font-size: 30px;
-    gap: 10px;
+  }
+  header .link ul li:hover {
+    background-color: rgb(36, 146, 189);
   }
   header .link ul li a {
     text-decoration: none;
@@ -996,8 +1004,8 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 10%;
-    margin: 20px;
+    width: 90%;
+    margin: 25px;
     height: 1px;
   }
   .card-container .card {
@@ -1115,7 +1123,7 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
         -ms-flex-align: center;
             align-items: center;
     background-color: #BFBFBF;
-    height: 50vh;
+    height: 40vh;
     margin-top: 3%;
   }
   footer .right {
@@ -1171,7 +1179,11 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
   footer .center .facebook .teen, footer .center .tik-tok .teen, footer .center .you-tube .teen {
     margin-left: 10px;
   }
+  footer .center .you-tube {
+    display: none;
+  }
   footer .left {
+    margin-top: 80px;
     width: 30%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1185,7 +1197,7 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
     font-size: 20px;
     margin-left: 30px;
   }
-  footer .left .phone, footer .left .map, footer .left .Email {
+  footer .left .phone, footer .left .map {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1199,13 +1211,17 @@ footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
         -ms-flex-pack: start;
             justify-content: start;
     margin: 4px;
+    margin-top: 30px;
   }
-  footer .left .phone img, footer .left .map img, footer .left .Email img {
+  footer .left .phone img, footer .left .map img {
     width: 40px;
     height: 40px;
   }
-  footer .left .phone .teen, footer .left .map .teen, footer .left .Email .teen {
+  footer .left .phone .teen, footer .left .map .teen {
     margin-left: 10px;
+  }
+  footer .left .Email {
+    display: none;
   }
   .linkes {
     color: blue;

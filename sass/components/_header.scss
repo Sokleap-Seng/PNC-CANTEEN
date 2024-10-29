@@ -49,6 +49,9 @@ header{
             gap: 15px;
 
             li{
+                &:hover{
+                    background-color: rgb(36, 146, 189);
+                }
 
                 list-style: none;
                 font-size: 25px;

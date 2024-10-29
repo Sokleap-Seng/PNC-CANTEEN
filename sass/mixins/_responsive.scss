@@ -1,6 +1,6 @@
 @import "../components/variable";
 @import "../components/group-mixin";
-@media (min-width:800px) and (max-width:1024px){
+@media (min-width:768px) and (max-width:1024px){
     body{
         width: 100%;
     }
@@ -53,7 +53,9 @@
                 display: flex;
                 margin-left: 50px;
                 gap: 10px;
-                li{
+                li{                                   &:hover{
+                    background-color: rgb(36, 146, 189);
+                    }
                     list-style: none;
                     font-size: 30px;
                     gap: 10px;
@@ -82,7 +84,7 @@
         flex-direction: column;
         img{
             object-fit: cover;
-            height: 100vh;
+            height: 99vh;
             width: 100%;
         }
         h1{
@@ -135,7 +137,7 @@
         display: flex;
         gap: 20px;
         justify-content: space-between;
-        margin: 50px ;
+        margin: 20px ;
         // margin-left:8vh;
         height: 40vh;
         .card {
@@ -252,7 +254,7 @@
         button{
             font-size: 20px;
             height: 4vh;
-            margin-top: 90%;
+            margin-top: 100%;
             margin-right: 9000%;
             background-color: $seeall-bg;
             width: 140%;
@@ -353,22 +355,21 @@
     }
 
 // responsive phone
-@media (min-width:390px) and (max-width:800px){
+@media (min-width:320px) and (max-width:767px){
     header{
         flex-wrap: wrap;
         display: flex;
         flex-direction: row;
         background-color: $header-bg;
-        // @include text-center;
         height: 15vh;
         .img-flung{
-            display: none;      
+            display: none;  
         }
         .imgs{  
             flex-wrap: wrap;    
             display: flex;
             align-items:center;
-            margin-left: 20px;
+            margin-left: 90px;
             justify-content: end;   
             object-fit: cover;
             img{
@@ -380,12 +381,14 @@
             width: 50%;     
             ul{   
                 display: flex;
-                margin-left: 50px;
-                gap: 10px;
+                margin-left: 100px;
+                gap: 60px;
                 li{
+                    &:hover{
+                        background-color: rgb(36, 146, 189);
+                    }
                     list-style: none;
                     font-size: 30px;
-                    gap: 10px;  
                     a{                
                         text-decoration: none;
                     }
@@ -447,8 +450,8 @@
     .card-container {
         display: flex;
         justify-content: space-between;
-        width:10%;
-        margin: 20px;
+        width:90%;
+        margin: 25px;
         height: 1px;
         .card{
             margin-top: 10px;
@@ -537,7 +540,7 @@
         justify-content: space-between;
         align-items: center;
         background-color: $gray-bg;
-        height: 50vh;
+        height: 40vh;
         margin-top: 3%;
         .right{
             width: 35%;
@@ -576,8 +579,12 @@
                     margin-left: 10px;
                 }
             }
+            .you-tube{
+                display: none;
+            }
         }
-        .left{
+        .left{ 
+            margin-top: 80px;
             h2{
                 font-size: 20px;
                 margin-left: 30px;
@@ -585,10 +592,11 @@
             width: 30%;
             display: flex;
             flex-direction: column;
-            .phone, .map, .Email{
+            .phone, .map{
                 @include text-center;
                 justify-content: start;
                 margin: 4px;
+                margin-top: 30px;
                 
                 img{
                     width: 40px;
@@ -597,6 +605,9 @@
                 .teen{
                     margin-left: 10px;
                 }
+            }
+            .Email{
+                display: none;
             }
         }
         
