@@ -63,6 +63,9 @@ header .link ul li:hover {
 header .link ul li a {
   text-decoration: none;
 }
+header .link ul li .active {
+  background: rgb(208, 208, 253);
+}
 header .langues select {
   font-size: 25px;
 }
