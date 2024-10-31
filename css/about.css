@@ -12,6 +12,8 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: row;
   background-color: #FF9933;
@@ -48,11 +50,15 @@ header .imgs img {
 header .link ul {
   display: flex;
   margin-left: 80vh;
+  margin-left: 90vh;
   gap: 15px;
 }
 header .link ul li {
   list-style: none;
   font-size: 25px;
+}
+header .link ul li:hover {
+  background-color: rgb(36, 146, 189);
 }
 header .link ul li a {
   text-decoration: none;
@@ -68,6 +74,9 @@ header .langues select {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   flex-direction: column;
 }
 .backgorud img {
@@ -119,8 +128,32 @@ header .langues select {
   margin-left: 40px;
 }
 
+@keyframes cate {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .cate h2 {
-  color: #68A942;
+  width: 130px;
+  background: orange;
+  animation-name: rotate;
+  animation-duration: 60s;
+  animation-delay: 0s;
+}
+.cate h2:hover {
+  letter-spacing: 5px;
+  color: orange;
 }
 
 .about-container {
@@ -232,7 +265,6 @@ table tbody tr:hover {
 }
 .card-container .card-image1 {
   border-radius: 20px;
-  position: relative;
   padding: 0;
   background-image: linear-gradient(to bottom, #129a8e, #38ed7c);
 }

@@ -30,6 +30,7 @@ footer{
             margin-left: 10px;
         }
         width: 30%;
+
         display: flex;
         flex-direction: column;
         .facebook, .tik-tok, .you-tube{
@@ -66,3 +67,11 @@ footer{
     }
     
 }
+<<<<<<< HEAD
+.linkes{
+    color: $blue-gg;
+    background-color: $gray-bg;
+    @include text-center;
+}
+=======
+>>>>>>> sokleap

@@ -1,8 +1,8 @@
-@import "variable";
 @import "group-mixin";
-
-
+@import "../components/variable";
 header{
+    position: sticky;
+    top: 0;   
     display: flex;
     flex-direction: row;
     background-color: $header-bg;
@@ -46,9 +46,13 @@ header{
         ul{
             display: flex;
             margin-left: 80vh;
+            margin-left: 90vh;
             gap: 15px;
 
             li{
+                &:hover{
+                    background-color: rgb(36, 146, 189);
+                }
 
                 list-style: none;
                 font-size: 25px;
@@ -75,11 +79,14 @@ header{
 // #backgroud
 .backgorud{
     @include text-center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     flex-direction: column;
     img{
         object-fit: cover;
         height: 150vh;
-        width: 224.8vh;
+        width: 100%;
     }
     h1{
        font-size: 40px;
@@ -121,8 +128,36 @@ header{
     }
 }
 .cate{
+    @keyframes cate{
+        from{
+            transform: translateX(-300px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+    @keyframes rotate {
+        from {
+            transform: rotate(0);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    
     h2{
-        color: $text-food-bg;
+        width: 130px;
+        background: orange;
+        animation-name: rotate;
+        animation-duration: 60s;
+        animation-delay: 0s;
+        
+        
+    }
+    h2:hover{
+        letter-spacing: 5px;
+        color: orange;
+
     }
 }
 // Card1
@@ -152,3 +187,4 @@ header{
     text-align: center;
     padding-top: 20px;
 }
+
