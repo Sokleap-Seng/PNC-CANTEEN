@@ -161,6 +161,7 @@ header{
     }
 }
 // Card1
+// about
 .about-container{
     background: $about-container-bg;
     display: flex;
@@ -188,3 +189,39 @@ header{
     padding-top: 20px;
 }
 
+// contact
+.contact-imgs{
+    background: $about-container-bg;
+    display: flex;
+    justify-content: space-around;
+    object-fit: cover;
+    img{
+        width: 100%;
+    }
+}
+.QR{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 30px;
+    height: 22vh;
+    .para{
+        background: #ff9933;
+        border: none;
+        @include text-center;
+        border-radius: 10px;
+        
+    }
+    .moneys{
+        .img{
+            height: 10vh;
+            width: 100%;
+        }
+    }
+}
+// label-contact
+.contacts{
+    .pa{
+        display: flex;
+    }
+}

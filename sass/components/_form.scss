@@ -1,0 +1,94 @@
+@import "group-mixin";
+@import "../components/variable";
+.contant-form{
+    background: $gray-bg;
+    @include text-center;
+    flex-direction: column;
+    width: 65%;
+    margin: auto;
+    margin-top: 20px;
+    gap: 10px;
+    h1{
+        margin-top: 40px;
+        color: $header-bg;
+    }
+
+}
+.container{
+    background: $gray-bg;
+    @include text-center;
+    width: 65%;
+    height: 70vh;
+    margin: auto;
+    margin-bottom: 15px;
+    .contant-left{
+        margin-bottom: 40px;
+       .form-text{
+        display: flex;
+        gap: 20px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        .teen{
+            margin-top: 20px;
+        }
+        .material-icons{
+            margin-top: 20px;
+            
+        }
+       }
+       .form-links{
+        margin-top: 80px;
+        color:$blue-gg;
+       }
+    }
+    .contant-right{
+        margin-bottom: 25px;
+        flex: 0.7;
+        gap: 20px;
+        input[type="text"]{
+            border-radius: 10px;
+            height: 6vh;
+            width: 100%;
+            padding: 5px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+        .name{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .email-phone{
+            margin-top: 10px;
+        }
+        .Message{
+            margin-top: 20px;
+            input[type="message"]{
+                height: 10vh;
+                width: 100%;
+                border-radius: 15px;
+                padding:5px;
+                border: 1px solid black;
+            }
+        }
+        .form-btn{
+            margin-top: 40px;
+            @include text-center;
+            justify-content: end;
+            button{
+                height: 6vh;
+                width: 50%;
+                border-radius: 10px;
+                border: none;
+                color:$white-bg;
+                background: $seeall-bg;
+            }
+        }
+    }
+}
+.mapss{
+    iframe{
+        width: 100%;
+        height: 100vh;
+    }
+}
