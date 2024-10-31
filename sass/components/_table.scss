@@ -1,0 +1,46 @@
+@import "../components/variable";
+@import "../components/group-mixin";
+
+.contant{
+    width: 100%;
+    padding: 2% 10%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    thead tr{
+        background: $header-bg
+    }
+    td, th{
+        border: 1px solid rgb(13, 10, 10);
+        padding: 15px;
+    }
+    tbody tr:hover {
+        background:$tbody-tr-hover;
+    }
+}
+.table-date{
+    padding-bottom: 30px;
+    table{
+        thead{
+            tr{
+                th{
+                    text-transform: uppercase;
+                }
+            }
+        }
+        tbody{
+            tr{
+                td:nth-child(1){
+                    @include text-bold;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
