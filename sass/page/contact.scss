@@ -1,0 +1,19 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+@import "../components/variable";
+@import "../components/group-mixin";
+@import "../components/header";
+@import "../components/button";
+@import "../components/card";
+@import "../components/footer";
+@import "../components/form"
