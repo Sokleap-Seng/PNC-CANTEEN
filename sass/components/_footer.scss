@@ -65,13 +65,10 @@ footer{
         padding-left: 20px;
         width: 100%;
     }
-    
+    .linkes{
+        color: $blue-gg;
+        background-color: $gray-bg;
+        @include text-center;
+    }
 }
-<<<<<<< HEAD
-.linkes{
-    color: $blue-gg;
-    background-color: $gray-bg;
-    @include text-center;
-}
-=======
->>>>>>> sokleap
+
