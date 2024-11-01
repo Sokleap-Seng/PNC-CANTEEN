@@ -83,7 +83,7 @@ header .langues select {
   -o-object-fit: cover;
      object-fit: cover;
   height: 150vh;
-  width: 224.8vh;
+  width: 100%;
 }
 .backgorud h1 {
   font-size: 40px;
@@ -183,6 +183,41 @@ header .langues select {
 #about-p {
   text-align: center;
   padding-top: 20px;
+}
+
+.contact-imgs {
+  background: #edecec;
+  display: flex;
+  justify-content: space-around;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contact-imgs img {
+  width: 100%;
+}
+
+.QR {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  gap: 30px;
+  height: 22vh;
+}
+.QR .para {
+  background: #ff9933;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.QR .moneys .img {
+  height: 10vh;
+  width: 100%;
+}
+
+.contacts .pa {
+  display: flex;
 }
 
 .contant {
@@ -486,8 +521,24 @@ footer .linkes {
   padding-left: 20px;
   width: 100%;
 }
+footer .linkes {
+  color: blue;
+  background-color: #BFBFBF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: 100%;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    background-color: #FF9933;
+    height: 8vh;
+  }
   header {
     display: flex;
     flex-direction: row;
@@ -510,10 +561,10 @@ footer .linkes {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  header .img-flung .The-UK {
+  header .The-UK {
     margin-right: 200px;
   }
-  header .img-flung .The-UK img {
+  header .The-UK img {
     margin-right: 10px;
     width: 20px;
     height: 23px;
@@ -521,40 +572,327 @@ footer .linkes {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  header .imgs {
+  .imgs {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 25%;
   }
-  header .imgs img {
+  .imgs img {
     margin-right: 20px;
     width: 200px;
     height: 50px;
   }
-  header .link {
+  .link {
     width: 50%;
   }
-  header .link ul {
+  .link ul {
     display: flex;
     margin-left: 50px;
     gap: 10px;
   }
-  header .link ul li {
+  .link ul li {
     list-style: none;
-    font-size: 28px;
+    font-size: 30px;
     gap: 10px;
   }
-  header .link ul li a {
+  .link ul li:hover {
+    background-color: rgb(36, 146, 189);
+  }
+  .link ul li a {
     text-decoration: none;
   }
-  header .langues {
+  .langues {
     width: 10%;
     margin-right: 70px;
     size: 100px;
   }
-  header .langues select {
+  .langues select {
     font-size: 25px;
+  }
+  .backgorud {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .backgorud img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 99vh;
+    width: 100%;
+  }
+  .backgorud h1 {
+    font-size: 24px;
+    margin-top: 80px;
+  }
+  .backgorud p {
+    background-color: #FF9933;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 60px;
+    border-radius: 9px;
+    padding: 10px;
+    display: flex;
+  }
+  .menus {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  .menus .menu {
+    font-size: 30px;
+  }
+  .menus .bu {
+    margin-right: 10%;
+    background-color: #098600;
+    height: 40px;
+    width: 150px;
+    margin-top: 26%;
+    border-radius: 10px;
+  }
+  .menus .bu button {
+    font-size: 20px;
+    background-color: #098600;
+    border: none;
+    color: white;
+    margin-top: 7px;
+    margin-left: 40px;
+  }
+  @keyframes cate {
+    from {
+      transform: translateX(-300px);
+    }
+    to {
+      transform: translateX(0px);
+    }
+  }
+  @keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .cate h2 {
+    width: 130px;
+    background: orange;
+    animation-name: rotate;
+    animation-duration: 60s;
+    animation-delay: 0s;
+  }
+  .cate h2:hover {
+    letter-spacing: 5px;
+    color: orange;
+  }
+  .card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px;
+    height: 40vh;
+  }
+  .card-container .card {
+    width: 23%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-container .card .card-image1 .ratana img {
+    display: block;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10%;
+  }
+  .card-container .card .card-images img {
+    display: block;
+    width: 80%;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  .card-container .card-image1 {
+    border-radius: 20px;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #129a8e, #38ed7c);
+  }
+  .card-container .card-image1 .ratana img {
+    height: 100%;
+    width: 90%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-left: 2%;
+  }
+  .card-container .card-image1 .yon img {
+    width: 110%;
+    height: 100%;
+  }
+  .card-container .card-image1 .nana img {
+    width: 100%;
+    height: 100%;
+    margin-left: 5%;
+  }
+  .card-container .card-images {
+    border-radius: 20px;
+    height: 21vh;
+    background-image: linear-gradient(to bottom, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+  }
+  .card-container .card-content {
+    background-color: #f9f9f9;
+  }
+  .card-container .card-content .price {
+    display: flex;
+    width: 100%;
+    margin: 50px auto;
+  }
+  .card-container .card-content .price .order button {
+    width: 139%;
+    gap: 10px;
+  }
+  .card-container .card-content h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, #129a8e, #38ed7c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .card-container .card-content p {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-container .card-content button {
+    background-color: #129a8e;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .card-container .card-content :hover {
+    color: #F8B500;
+  }
+  .seemor {
+    display: flex;
+    margin-right: 100%;
+    width: 20%;
+  }
+  .seemor .btns button {
+    font-size: 20px;
+    height: 4vh;
+    margin-top: 100%;
+    margin-right: 9000%;
+    background-color: #098600;
+    width: 140%;
+    justify-content: flex-start;
+    display: flex;
+    border: none;
+    color: white;
+    border-radius: 10px;
+  }
+  .seemor .btns button p {
+    margin-top: 5%;
+    margin-left: 6%;
+  }
+  .seemor .im img {
+    background-color: white;
+    margin-top: 250%;
+    margin-left: 25%;
+    border-radius: 100%;
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #BFBFBF;
+    height: 35vh;
+    margin-top: 10%;
+  }
+  footer .right {
+    width: 40%;
+  }
+  footer .right img {
+    width: 50%;
+    margin-bottom: 10%;
+    margin-left: 30px;
+  }
+  footer .right h2 {
+    margin-left: 30px;
+  }
+  footer .right p {
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+  footer .center {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .center h2 {
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+  footer .center .facebook, footer .center .tik-tok, footer .center .you-tube {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+    margin: 30px;
+  }
+  footer .center .facebook img, footer .center .tik-tok img, footer .center .you-tube img {
+    width: 50px;
+    height: 40px;
+    margin-top: 10px;
+  }
+  footer .center .facebook .teen, footer .center .tik-tok .teen, footer .center .you-tube .teen {
+    margin-left: 10px;
+  }
+  footer .left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .left h2 {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  footer .left .phone, footer .left .map, footer .left .Email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+    margin: 30px;
+    margin-left: 10px;
+    width: 100%;
+  }
+  footer .left .phone img, footer .left .map img, footer .left .Email img {
+    width: 40px;
+    height: 40px;
+  }
+  .linkes {
+    color: blue;
+    background-color: #BFBFBF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -617,6 +955,7 @@ footer .linkes {
     display: flex;
     flex-direction: row;
     background-color: #FF9933;
+    height: 15vh;
     height: 30vh;
   }
   header .img-flung {
@@ -625,13 +964,17 @@ footer .linkes {
   header .imgs {
     flex-wrap: wrap;
     display: flex;
+    align-items: center;
+    margin-left: 90px;
+    justify-content: end;
+    -o-object-fit: cover;
+       object-fit: cover;
     justify-content: center;
     align-items: center;
     margin-left: 50px;
     margin-top: 10px;
     justify-content: end;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   header .imgs img {
     width: 140%;
@@ -642,6 +985,8 @@ footer .linkes {
   }
   header .link ul {
     display: flex;
+    margin-left: 100px;
+    gap: 60px;
     margin-left: 45px;
     gap: 30px;
   }
@@ -658,6 +1003,251 @@ footer .linkes {
   header .langues {
     display: none;
   }
+  .backgorud {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .backgorud img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100vh;
+    width: 100%;
+  }
+  .backgorud h1 {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  .backgorud p {
+    background-color: #FF9933;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-top: 30px;
+    border-radius: 9px;
+    padding: 10px;
+    display: flex;
+  }
+  .menus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .menus .bu {
+    margin-bottom: 28%;
+    margin-right: 10%;
+    background-color: #098600;
+    border-radius: 10px;
+  }
+  .menus .bu button {
+    font-size: 20px;
+    background-color: #098600;
+    border: none;
+    color: white;
+  }
+  @keyframes cate {
+    from {
+      transform: translateX(-300px);
+    }
+    to {
+      transform: translateX(0px);
+    }
+  }
+  @keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .cate h2 {
+    width: 130px;
+    background: orange;
+    animation-name: rotate;
+    animation-duration: 60s;
+    animation-delay: 0s;
+  }
+  .cate h2:hover {
+    letter-spacing: 5px;
+    color: orange;
+  }
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 25px;
+    height: 1px;
+  }
+  .card-container .card {
+    margin-top: 10px;
+    width: 80px;
+    height: 40vh;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-container .card .card-image1 img, .card-container .card .card-images img {
+    margin-top: 20px;
+    width: 60px;
+    height: 65px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .card-container .card-image1 {
+    height: 34%;
+    background-image: linear-gradient(to bottom, #129a8e, #38ed7c);
+  }
+  .card-container .card-images {
+    height: 100px;
+    background-image: linear-gradient(to bottom, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+  }
+  .card-container .card-content {
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+  .card-container .card-content h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    margin-top: 1px;
+    background-image: linear-gradient(to right, #129a8e, #38ed7c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .card-container .card-content p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+  }
+  .card-container .card-content button {
+    display: none;
+  }
+  .card-container .card-content :hover {
+    color: #F8B500;
+  }
+  .seemor {
+    height: 8vh;
+    display: flex;
+    margin-left: 60%;
+    margin-top: 75%;
+  }
+  .seemor .btns button {
+    font-size: 14px;
+    height: 4vh;
+    background-color: #098600;
+    width: 200%;
+    justify-content: flex-start;
+    display: flex;
+    border: none;
+    color: white;
+    margin-top: 60%;
+    border-radius: 10px;
+  }
+  .seemor .btns button p {
+    margin-left: 10%;
+  }
+  .seemor .im img {
+    width: 70%;
+    background-color: white;
+    margin-top: 120%;
+    margin-left: 60%;
+    border-radius: 100%;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #BFBFBF;
+    height: 40vh;
+    margin-top: 3%;
+  }
+  footer .right {
+    width: 35%;
+  }
+  footer .right img {
+    width: 70%;
+    margin-bottom: 10%;
+    margin-left: 11px;
+  }
+  footer .right h2 {
+    font-size: 18px;
+    margin-left: 15px;
+    margin-bottom: 10%;
+  }
+  footer .right p {
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+  footer .center {
+    margin-top: 80px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .center h2 {
+    font-size: 20px;
+  }
+  footer .center .facebook, footer .center .tik-tok, footer .center .you-tube {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+    margin: 30px;
+  }
+  footer .center .facebook img, footer .center .tik-tok img, footer .center .you-tube img {
+    width: 50px;
+    height: 40px;
+  }
+  footer .center .facebook .teen, footer .center .tik-tok .teen, footer .center .you-tube .teen {
+    margin-left: 10px;
+  }
+  footer .center .you-tube {
+    display: none;
+  }
+  footer .left {
+    margin-top: 80px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .left h2 {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  footer .left .phone, footer .left .map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+    margin: 4px;
+    margin-top: 30px;
+  }
+  footer .left .phone img, footer .left .map img {
+    width: 40px;
+    height: 40px;
+  }
+  footer .left .phone .teen, footer .left .map .teen {
+    margin-left: 10px;
+  }
+  footer .left .Email {
+    display: none;
+  }
+  .linkes {
+    color: blue;
+    background-color: #BFBFBF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
   .about-container {
     height: 40vh;
   }
