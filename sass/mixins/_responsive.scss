@@ -948,5 +948,38 @@
    }
 }
 
-
+@media (min-width:768px) and (max-width:1024px){
+    .contant-form{
+        width: 100%;
+    }
+    .container{
+        height: 40vh;
+        width: 100%;
+        margin-bottom: 20px;
+        .contant-right{
+            margin-top: 30px;
+            .name{
+                margin-top: 20px;
+            }
+            .email-phone{
+                margin-bottom: 10px;
+            }
+            .Message{
+                margin-bottom: 20px;
+                input[type="message"]{
+                    height: 5vh;
+                }
+            }
+            input[type="text"]{
+                height: 4vh;
+            }
+            .form-btn{
+                button{
+                    margin-bottom: 20px;
+                    height: 4vh;
+                }
+            }
+        }
+    }
+}
 
