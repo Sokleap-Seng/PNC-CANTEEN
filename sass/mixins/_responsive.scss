@@ -443,16 +443,121 @@
     flex-wrap: wrap;
     .center{
         p{
-            font-size: small;
+            font-size: 12px;
         }
     }
     .left{
         p{
-            font-size: small;
+            font-size: 12px;
         }
     }
    }
 }
+
+
+// Contact
+
+@media (min-width:768px) and (max-width:1024px){
+    header{        
+        display: flex;
+        flex-direction: row;
+        height: 13vh;
+        align-items: center;
+        .img-flung{
+            display: flex;
+            gap: 10px;
+            width: 15%;
+            margin-top: 5px;
+            .cambodia{
+                margin-right: 20px;
+                img{
+                    // margin-left: 10px;
+                    width: 25px;
+                    height: 25px;
+                    object-fit: cover;
+                }
+            }
+        }
+            .The-UK{
+                margin-right: 200px;
+                img{
+                    margin-right: 10px;
+                    width: 20px;
+                    height: 23px;
+                    margin-top: 5px;  
+                    object-fit: cover;      
+                }
+            }           
+        .imgs{
+            display: flex;
+            align-items:center;
+            justify-content: flex-end;
+            width: 25%;
+            img{
+                margin-right: 20px;
+                width: 200px;
+                height: 50px;
+            }
+        }
+        .link{
+            width: 50%;     
+            ul{   
+                display: flex;
+                margin-left: 50px;
+                gap: 10px;
+                li{ 
+                    &:hover{
+                    background-color: rgb(36, 146, 189);
+                    }
+                    list-style: none;
+                    font-size: 30px;
+                    gap: 10px;
+    
+                    a{                
+                        text-decoration: none;
+                        // padding: 20px;
+                    }
+                    
+                }
+                
+            }
+        }
+        .langues{
+            width: 10%;
+            margin-right: 70px;
+            size: 100px;
+            select{
+                font-size: 25px;
+            }
+        } 
+    }
+    .QR{
+        .para{
+            width: 50%;
+            height: 15vh;
+            p{
+                width: 60%;
+                font-size: 20px;
+            }
+        }
+        .moneys{
+            // width: 30%;
+            img{
+                height: 15vh;
+            }
+        }
+    }  
+    .contant-form{
+        h1{}
+    }
+}
+
+
+
+
+
+
+
 @media (min-width:320px) and (max-width:767px){
     header{
         flex-wrap: wrap;
@@ -669,88 +774,7 @@
         }
        }
     }
-    footer{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $gray-bg;
-        height: 40vh;
-        margin-top: 3%;
-        .right{
-            width: 35%;
-            img{
-                width: 70%;
-                margin-bottom: 10%;
-                margin-left:11px;
-            }
-            h2{
-                font-size: 18px;
-                margin-left: 15px;
-                margin-bottom: 10%;
-            }
-            p{
-                margin-bottom: 10px;
-                margin-left: 15px;
-            }
-        }
-        .center{
-            margin-top:  80px;
-            h2{
-                font-size: 20px;
-            }
-            width: 35%;  
-            display: flex;
-            flex-direction: column;
-            .facebook, .tik-tok, .you-tube{
-                @include text-center;
-                justify-content: start;
-                margin: 30px;
-                img{
-                    width: 50px;
-                    height: 40px;
-                }
-                .teen{
-                    margin-left: 10px;
-                }
-            }
-            .you-tube{
-                display: none;
-            }
-        }
-        .left{ 
-            margin-top: 80px;
-            h2{
-                font-size: 20px;
-                margin-left: 30px;
-            }
-            width: 30%;
-            display: flex;
-            flex-direction: column;
-            .phone, .map{
-                @include text-center;
-                justify-content: start;
-                margin: 4px;
-                margin-top: 30px;
-                
-                img{
-                    width: 40px;
-                    height: 40px;
-                }
-                .teen{
-                    margin-left: 10px;
-                }
-            }
-            .Email{
-                display: none;
-            }
-        }
-        
-    }
-    .linkes{
-        color: $blue-gg;
-        background-color: $gray-bg;
-        @include text-center;
-    }
+    
 }
     // <!-- card name food -->
 
@@ -840,3 +864,81 @@
 }
 
 
+
+
+@media (min-width:768px) and (max-width:1024px){
+    .contant-form{
+        width: 100%;
+    }
+    .container{
+        height: 40vh;
+        width: 100%;
+        margin-bottom: 20px;
+        .contant-right{
+            margin-top: 30px;
+            .name{
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+            .email-phone{
+                margin-bottom: 10px;
+            }
+            .Message{
+                margin-bottom: 20px;
+                input[type="message"]{
+                    height: 5vh;
+                }
+            }
+            input[type="text"]{
+                height: 4vh;
+            }
+            .form-btn{
+                button{
+                    margin-bottom: 20px;
+                    height: 4vh;
+                }
+            }
+        }
+    }
+
+@media (min-width:320px) and (max-width:767px){
+    .QR{
+        .para{
+            height: 10vh;
+        }
+    }
+    .contant-form{
+        width: 100%;
+    }
+    .container{
+        height: 103vh;
+        width: 100%;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        .contant-left{
+            margin-top: 40px;
+        }
+        .form-links{
+            p{
+                display: flex; 
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+            }
+            
+        }
+        .Message{
+            input[type="message"]{
+                height: 4vh;
+            }
+        }
+        .form-btn{
+            margin-bottom: 30px;
+        }
+    }
+    
+}
+
+}

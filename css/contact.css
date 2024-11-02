@@ -1393,10 +1393,110 @@ footer .linkes {
         flex-wrap: wrap;
   }
   footer .center p {
-    font-size: small;
+    font-size: 12px;
   }
   footer .left p {
-    font-size: small;
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 13vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .img-flung {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    width: 15%;
+    margin-top: 5px;
+  }
+  header .img-flung .cambodia {
+    margin-right: 20px;
+  }
+  header .img-flung .cambodia img {
+    width: 25px;
+    height: 25px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header .The-UK {
+    margin-right: 200px;
+  }
+  header .The-UK img {
+    margin-right: 10px;
+    width: 20px;
+    height: 23px;
+    margin-top: 5px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header .imgs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 25%;
+  }
+  header .imgs img {
+    margin-right: 20px;
+    width: 200px;
+    height: 50px;
+  }
+  header .link {
+    width: 50%;
+  }
+  header .link ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 50px;
+    gap: 10px;
+  }
+  header .link ul li {
+    list-style: none;
+    font-size: 30px;
+    gap: 10px;
+  }
+  header .link ul li:hover {
+    background-color: rgb(36, 146, 189);
+  }
+  header .link ul li a {
+    text-decoration: none;
+  }
+  header .langues {
+    width: 10%;
+    margin-right: 70px;
+    size: 100px;
+  }
+  header .langues select {
+    font-size: 25px;
+  }
+  .QR .para {
+    width: 50%;
+    height: 15vh;
+  }
+  .QR .para p {
+    width: 60%;
+    font-size: 20px;
+  }
+  .QR .moneys img {
+    height: 15vh;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1706,130 +1806,6 @@ footer .linkes {
     margin-left: 60%;
     border-radius: 100%;
   }
-  footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #BFBFBF;
-    height: 40vh;
-    margin-top: 3%;
-  }
-  footer .right {
-    width: 35%;
-  }
-  footer .right img {
-    width: 70%;
-    margin-bottom: 10%;
-    margin-left: 11px;
-  }
-  footer .right h2 {
-    font-size: 18px;
-    margin-left: 15px;
-    margin-bottom: 10%;
-  }
-  footer .right p {
-    margin-bottom: 10px;
-    margin-left: 15px;
-  }
-  footer .center {
-    margin-top: 80px;
-    width: 35%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  footer .center h2 {
-    font-size: 20px;
-  }
-  footer .center .facebook, footer .center .tik-tok, footer .center .you-tube {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    margin: 30px;
-  }
-  footer .center .facebook img, footer .center .tik-tok img, footer .center .you-tube img {
-    width: 50px;
-    height: 40px;
-  }
-  footer .center .facebook .teen, footer .center .tik-tok .teen, footer .center .you-tube .teen {
-    margin-left: 10px;
-  }
-  footer .center .you-tube {
-    display: none;
-  }
-  footer .left {
-    margin-top: 80px;
-    width: 30%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  footer .left h2 {
-    font-size: 20px;
-    margin-left: 30px;
-  }
-  footer .left .phone, footer .left .map {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    margin: 4px;
-    margin-top: 30px;
-  }
-  footer .left .phone img, footer .left .map img {
-    width: 40px;
-    height: 40px;
-  }
-  footer .left .phone .teen, footer .left .map .teen {
-    margin-left: 10px;
-  }
-  footer .left .Email {
-    display: none;
-  }
-  .linkes {
-    color: blue;
-    background-color: #BFBFBF;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .about-container {
@@ -1917,5 +1893,85 @@ footer .linkes {
   footer .linkes {
     margin-left: 20px;
     width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contant-form {
+    width: 100%;
+  }
+  .container {
+    height: 40vh;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .container .contant-right {
+    margin-top: 30px;
+  }
+  .container .contant-right .name {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .contant-right .email-phone {
+    margin-bottom: 10px;
+  }
+  .container .contant-right .Message {
+    margin-bottom: 20px;
+  }
+  .container .contant-right .Message input[type=message] {
+    height: 5vh;
+  }
+  .container .contant-right input[type=text] {
+    height: 4vh;
+  }
+  .container .contant-right .form-btn button {
+    margin-bottom: 20px;
+    height: 4vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (min-width: 320px) and (max-width: 767px) {
+  .QR .para {
+    height: 10vh;
+  }
+  .contant-form {
+    width: 100%;
+  }
+  .container {
+    height: 103vh;
+    width: 100%;
+    margin-bottom: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .contant-left {
+    margin-top: 40px;
+  }
+  .container .form-links p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+  }
+  .container .Message input[type=message] {
+    height: 4vh;
+  }
+  .container .form-btn {
+    margin-bottom: 30px;
   }
 }
