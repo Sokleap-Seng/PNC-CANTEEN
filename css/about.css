@@ -1383,4 +1383,68 @@ footer .linkes {
   .container .form-btn {
     margin-bottom: 30px;
   }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contant-form {
+    width: 100%;
+  }
+  .container {
+    height: 40vh;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .container .contant-right {
+    margin-top: 30px;
+  }
+  .container .contant-right .name {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .contant-right .email-phone {
+    margin-bottom: 10px;
+  }
+  .container .contant-right .Message {
+    margin-bottom: 20px;
+  }
+  .container .contant-right .Message input[type=message] {
+    height: 5vh;
+  }
+  .container .contant-right input[type=text] {
+    height: 4vh;
+  }
+  .container .contant-right .form-btn button {
+    margin-bottom: 20px;
+    height: 4vh;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .QR .para {
+    height: 10vh;
+  }
+  .contant-form {
+    width: 100%;
+  }
+  .container {
+    height: 103vh;
+    width: 100%;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .contant-left {
+    margin-top: 40px;
+  }
+  .container .form-links p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  .container .Message input[type=message] {
+    height: 4vh;
+  }
+  .container .form-btn {
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=about.css.map */
