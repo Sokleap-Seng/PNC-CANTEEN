@@ -576,7 +576,7 @@
             justify-content: center;
             align-items:center;
             margin-left: 50px;
-            margin-top: 10px;
+            margin-top: 20px;
             justify-content: end;   
             object-fit: cover;
             img{
@@ -585,13 +585,13 @@
             }
         }
         .link{
-            width: 50%;   
+            // width: 50%;   
             ul{   
                 display: flex;
                 margin-left: 100px;
-                gap: 60px;
-                margin-left: 45px;
                 gap: 30px;
+                margin-left: 45px;
+                // gap: 30px;
                 li{
                     &:hover{
                         background-color: rgb(36, 146, 189);
