@@ -944,12 +944,14 @@ footer .linkes {
     justify-content: center;
     justify-content: start;
     margin: 30px;
-    margin-left: 10px;
-    width: 100%;
   }
   footer .left .phone img, footer .left .map img, footer .left .Email img {
     width: 40px;
     height: 40px;
+  }
+  footer .left .phone .teen1, footer .left .map .teen1, footer .left .Email .teen1 {
+    margin-left: 10px;
+    width: 100%;
   }
   .linkes {
     color: blue;
