@@ -843,3 +843,80 @@
    }
 }
 
+// contact
+@media (min-width:768px) and (max-width:1024px){
+    .contant-form{
+        width: 100%;
+    }
+    .container{
+        height: 40vh;
+        width: 100%;
+        margin-bottom: 20px;
+        .contant-right{
+            margin-top: 30px;
+            .name{
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+            .email-phone{
+                margin-bottom: 10px;
+            }
+            .Message{
+                margin-bottom: 20px;
+                input[type="message"]{
+                    height: 5vh;
+                }
+            }
+            input[type="text"]{
+                height: 4vh;
+            }
+            .form-btn{
+                button{
+                    margin-bottom: 20px;
+                    height: 4vh;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:320px) and (max-width:767px){
+    .QR{
+        .para{
+            height: 10vh;
+        }
+    }
+    .contant-form{
+        width: 100%;
+    }
+    .container{
+        height: 103vh;
+        width: 100%;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        .contant-left{
+            margin-top: 40px;
+        }
+        .form-links{
+            p{
+                display: flex; 
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+            }
+            
+        }
+        .Message{
+            input[type="message"]{
+                height: 4vh;
+            }
+        }
+        .form-btn{
+            margin-bottom: 30px;
+        }
+    }
+    
+}
+
